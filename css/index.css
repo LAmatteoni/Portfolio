@@ -1,0 +1,16 @@
+#card{
+    border: 1px black solid;
+    border-radius: 2em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 20em;
+    margin: auto;
+    text-align: center;
+    margin: 100px 0px;
+    padding: 10em 0px;
+}
+
+.perfil{
+    max-width: 13em;
+    border-radius: 40%;
+    
+}
