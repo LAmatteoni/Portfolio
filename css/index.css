@@ -10,30 +10,50 @@ body{
 }
 
 #card{
-    text-align: center;
+    position: relative;
     border-radius: 2vh;
     box-shadow:  12px 12px 0px #565956, -12px -12px 0px #ffffff;
-    min-width: 60vh;
-    min-height: 60vh;
+    min-width: 90vh;
+    min-height: 70vh;
     background-color: #d8dfd8;
+    display: inline-flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
 }
 
+.perfil{
+    color: #171C17;
+}
 .perfil img{
-    width: 13em;
+    max-width: 13em;
+    max-height: 13em;
     border-radius: 2em;
+    padding-top: 15px;
+
 }
 .perfil h1{
     font-weight: 700;
-    color: #171C17;
 }
 .perfil h3{
     font-weight: 400;
-    color: #171C17;
+}
+span{
+    display: block;
+    justify-content: center;
+    align-items: center;
 }
 
-ul{
+.button{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 15px;
+}
+ul, li{
+    display: inline-block;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 5px;
+
 }
 
 button {
