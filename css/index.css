@@ -32,45 +32,99 @@ body{
     color: #171C17;
     display: flex;
 }
-.perfil img{
-    max-width: 13em;
-    max-height: 13em;
-    border-radius: 2em;
-    padding-top: 15px;
-    padding-left: 15px;
+    .perfil img{
+        max-width: 13em;
+        max-height: 13em;
+        border-radius: 2em;
+        padding-top: 15px;
+        padding-left: 15px;
+    }
+    .perfil h1{
+        font-weight: 700;
+        font-size: 40px;
+    }
+    .perfil h2{
+        font-weight: 400;
+        padding-top: 9px;
+    }
+    .perfil span{
+        display: inline-flex;
+        flex-direction: column;
+        padding-left: 15px;
+        padding-top: 10%;
+    }
 
-}
-.perfil h1{
-    font-weight: 700;
-    font-size: 40px;
-}
-.perfil h2{
-    font-weight: 400;
-    padding-top: 9px;
-}
-.perfil span{
-    display: inline-flex;
-    flex-direction: column;
-    padding-left: 15px;
-    padding-top: 10%;
-}
-
-.botaoLista{
+.botao-lista{
     display: flex;
     justify-content: space-between;
     padding: 15px;
 }
-.botaoLista ul, li{
-    display: inline-block;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-left: 5px;
+    .botao-lista ul, li{
+        display: inline-block;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 5px;
+    }
 
+.tech-lista{
+    width: 100%;
+    max-width: 600px;
+    padding: 0 20px;
 }
-
-.techLista{
-    border: black solid;
-}
+    .tech-lista h3{
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    .skill-nome{
+      font-weight: 600;
+      font-size: 14px;
+      color: #171C17;
+      text-transform: uppercase;
+      margin: 2px 0;
+    }
+    .skill-barra{
+      height: 12px;
+      background: #282828;
+      border-radius: 3px;
+    }
+    .skill-porcentagem{
+      height: 12px;
+      background: #d13639;
+      border-radius: 3px;
+      position: relative;
+      animation: fillBars 2.5s 1;
+    }
+    .skill-porcentagem::before{
+      content: attr(per);
+      position: absolute;
+      padding: 4px 6px;
+      background: #f1f1f1;
+      border-radius: 4px;
+      font-size: 12px;
+      top: -30px;
+      right: 0;
+      transform: translateX(50%);
+    }
+    .skill-porcentagem::after{
+      content: "";
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background: #51c72d;
+      top: -12px;
+      right: 0;
+      transform: translateX(50%) rotate(45deg);
+      border-radius: 2px;
+    }
+    @keyframes fillBars{
+      from{
+        width: 0;
+      }
+      to{
+        width: 100%;
+      }
+    }
 
 button {
     letter-spacing: 2px;
