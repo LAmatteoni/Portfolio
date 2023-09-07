@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 /*
-#B2FFA9 verde
+#B2FFA9 verde claro
+#244F26 verde escuro
 #FF4A1C laranja
 #81523F cafe
 #3F2A2B marrom
@@ -13,24 +14,27 @@ body{
     justify-content: center;
     align-items: center;
     font-family: 'Poppins', sans-serif;
-    background-color: #d8dfd8;
+    background-color: #3F2A2B;
     min-height: 100vh;
 }
 
 #card{
     position: relative;
     border-radius: 2vh;
-    box-shadow:  12px 12px 0px #565956, -12px -12px 0px #ffffff;
-    min-width: 90vh;
-    min-height: 70vh;
-    background-color: #d8dfd8;
+    box-shadow:  12px 12px 0px #244F26, -12px -12px 0px #dbffd7;
+    max-width: 140vh;
+    max-height: 100vh;
+    background-color: #B2FFA9;
     display: inline-flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .perfil{
     color: #171C17;
     display: flex;
+    width: 100%;
+    height: 100%;
 }
     .perfil img{
         max-width: 13em;
@@ -56,8 +60,10 @@ body{
 
 .botao-lista{
     display: flex;
-    justify-content: space-between;
-    padding: 15px;
+    padding: 15px 0 15px 555px;
+    width: 100%;
+    height: 100%;
+    max-width: 13em;
 }
     .botao-lista ul, li{
         display: inline-block;
@@ -67,9 +73,11 @@ body{
     }
 
 .tech-lista{
-    width: 100%;
-    max-width: 600px;
-    padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 5px 20px 5px 10px;
 }
     .tech-lista h3{
         font-size: 18px;
@@ -82,6 +90,7 @@ body{
       color: #171C17;
       text-transform: uppercase;
       margin: 2px 0;
+      padding-bottom: 18px;
     }
     .skill-barra{
       height: 12px;
@@ -90,7 +99,7 @@ body{
     }
     .skill-porcentagem{
       height: 12px;
-      background: #d13639;
+      background: #FF4A1C;
       border-radius: 3px;
       position: relative;
       animation: fillBars 2.5s 1;
@@ -99,7 +108,7 @@ body{
       content: attr(per);
       position: absolute;
       padding: 4px 6px;
-      background: #f1f1f1;
+      background: #dbffd7;
       border-radius: 4px;
       font-size: 12px;
       top: -30px;
@@ -111,7 +120,7 @@ body{
       position: absolute;
       width: 10px;
       height: 10px;
-      background: #51c72d;
+      background: #dbffd7;
       top: -12px;
       right: 0;
       transform: translateX(50%) rotate(45deg);
@@ -130,13 +139,13 @@ button {
     letter-spacing: 2px;
     text-decoration: none;
     text-transform: uppercase;
-    background-color: #d8dfd8;
-    color: #565956;
+    background-color: #dbffd7;
+    color: #244F26;
     cursor: pointer;
     border-radius: 10px;
     border: 3px solid;
     padding: 0.25em 0.5em;
-    box-shadow: 1px 1px 0px 0px #565956, 2px 2px 0px 0px #565956, 3px 3px 0px 0px #565956, 4px 4px 0px 0px #565956, 5px 5px 0px 0px #565956;
+    box-shadow: 1px 1px 0px 0px #244F26, 2px 2px 0px 0px #244F26, 3px 3px 0px 0px #244F26, 4px 4px 0px 0px #244F26, 5px 5px 0px 0px #244F26;
     position: relative;
     user-select: none;
     -webkit-user-select: none;
