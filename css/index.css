@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@font-face {
+  font-family: akira;
+  src: url(/akira_fonte/Akira\ Expanded\ Demo.otf);
+}
 
 /*
 #B2FFA9 verde claro
@@ -47,6 +51,7 @@ body{
         padding-left: 15px;
     }
     .perfil h1{
+      font-family: akira;
         font-weight: 700;
         font-size: 40px;
     }
