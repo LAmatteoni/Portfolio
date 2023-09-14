@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
 @font-face {
   font-family: akira;
   src: url(/akira_fonte/Akira\ Expanded\ Demo.otf);
@@ -43,33 +43,33 @@ body{
   height: 100%;
   position: absolute;
 }
-    .perfil img{
-      max-width: 13em;
-      max-height: 13em;
-      border-radius: 2em;
-      padding-top: 15px;
-      padding-left: 15px;
-    }
-    .perfil h1{
-      font-family: akira, 'Poppins', sans-serif;
-      font-weight: 700;
-      font-size: 40px;
-    }
-    .perfil h2{
-      font-weight: 500;
-      padding-top: 9px;
-    }
-    .perfil h2 a{
-      text-decoration: none;
-      font-weight: 700;
-      color: #3F2A2B;
-    }
-    .perfil span{
-      display: inline-flex;
-      flex-direction: column;
-      padding-left: 15px;
-      padding-top: 10%;
-    }
+  .perfil img{
+    max-width: 13em;
+    max-height: 13em;
+    border-radius: 2em;
+    padding-top: 15px;
+    padding-left: 15px;
+  }
+  .perfil h1{
+    font-family: akira, 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+  }
+  .perfil h2{
+    font-weight: 500;
+    padding-top: 9px;
+  }
+  .perfil h2 a{
+    text-decoration: none;
+    font-weight: 700;
+    color: #3F2A2B;
+  }
+  .perfil span{
+    display: inline-flex;
+    flex-direction: column;
+    padding-left: 15px;
+    padding-top: 10%;
+  }
 
 .botao-lista{
   display: flex;
@@ -86,7 +86,7 @@ body{
     padding-left: 5px;
   }
   button {
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     text-decoration: none;
     text-transform: uppercase;
     background-color: #dbffd7;
@@ -110,11 +110,6 @@ body{
     box-shadow: 0px 0px 0px 0px;
     top: 5px;
     left: 5px;
-  }
-  @media (min-width: 768px) {
-    button {
-      padding: 0.25em 0.75em;
-    }
   }
 
 .tech-lista{
@@ -169,3 +164,78 @@ body{
       width: 100%;
     }
   }
+
+
+@media(max-width: 820px){
+    #card{
+      max-width: 700px;
+      max-height: 600px;
+      min-width: 700px;
+      min-height: 600px;
+    }
+    
+    .perfil img{
+      padding-top: 45px;
+    }
+    .perfil h1{
+      font-family: akira, 'Poppins', sans-serif;
+      font-weight: 700;
+      font-size: 40px;
+    }
+    .perfil h2{
+      font-weight: 600;
+      padding-top: 9px;
+      font-size: 18px;
+    }
+    .perfil h2 a{
+      text-decoration: none;
+      font-weight: 900;
+    }
+    .perfil span{
+      display: inline-flex;
+      flex-direction: column;
+      padding-left: 15px;
+      padding-top: 10%;
+    }
+
+    button {
+      font-weight: 600;
+      font-size: 17px;
+    }
+    .botao-lista{
+      padding: 25px 0 15px 555px;
+    }
+      .botao-lista ul, li{
+        flex-direction: column;
+        padding-bottom: 10px;
+      }
+
+    .tech-lista{
+      width: 80%;
+      height: 100%;
+      padding: 90px 20px 5px 60px;
+    }
+      .tech-lista h3{
+        font-size: 24px;
+      }
+      .skill-nome{
+        font-weight: 600;
+        font-size: 18px;
+        padding-bottom: 5px;
+      }
+      .skill-barra{
+        height: 22px;
+        background: #3F2A2B;
+        border-radius: 5px;
+        margin-top: 8px;
+      }
+      .skill-porcentagem{
+        height: 22px;
+        border-radius: 5px;
+      }
+      .skill-porcentagem::before{
+        font-weight: 600;
+        font-size: 19px;
+        top: 1px;
+      }
+}
